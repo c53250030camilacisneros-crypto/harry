@@ -1,0 +1,290 @@
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #10131b;
+    color: #f5f0e6;
+    line-height: 1.6;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+header {
+    background-color: #080b12;
+    padding: 18px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #d6ad55;
+    font-size: 25px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #d6ad55;
+}
+
+/* PORTADA */
+.hero {
+    min-height: 550px;
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+        url("imagenes/hogwarts.jpg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #e4c16c;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #b58b3c;
+    color: #10131b;
+    padding: 12px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #e4c16c;
+    transform: scale(1.05);
+}
+
+/* INTRODUCCIÓN */
+.introduccion {
+    text-align: center;
+    padding: 65px 12%;
+    background-color: #191f2b;
+}
+
+h2 {
+    color: #e4c16c;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.introduccion p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 17px;
+}
+
+/* SECCIONES */
+.seccion {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* TARJETAS DE PERSONAJES */
+.tarjeta {
+    background-color: #202938;
+    padding: 30px 22px;
+    border-radius: 12px;
+    width: 280px;
+    border: 1px solid #8d7039;
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    background-color: #293548;
+}
+
+.tarjeta h3 {
+    color: #e4c16c;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* CASAS DE HOGWARTS */
+.casas {
+    background-color: #191f2b;
+}
+
+.casa {
+    width: 230px;
+    padding: 28px 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.casa:hover {
+    transform: scale(1.05);
+}
+
+.casa h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.gryffindor {
+    background-color: #761f28;
+}
+
+.slytherin {
+    background-color: #174d3b;
+}
+
+.ravenclaw {
+    background-color: #233e70;
+}
+
+.hufflepuff {
+    background-color: #9b7724;
+    color: white;
+}
+
+/* PELÍCULAS */
+.texto-centro {
+    max-width: 800px;
+    margin: 0 auto 25px;
+}
+
+.peliculas-lista {
+    max-width: 650px;
+    margin: auto;
+    text-align: left;
+}
+
+.peliculas-lista p {
+    background-color: #202938;
+    padding: 13px 20px;
+    margin-bottom: 10px;
+    border-left: 4px solid #d6ad55;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.peliculas-lista p:hover {
+    background-color: #303c50;
+    padding-left: 28px;
+}
+
+/* GALERÍA */
+.galeria {
+    background-color: #191f2b;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.imagenes img {
+    width: 300px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #b58b3c;
+    transition: 0.3s;
+}
+
+.imagenes img:hover {
+    transform: scale(1.04);
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #080b12;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h3 {
+    color: #e4c16c;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #c5c5c5;
+    margin: 5px;
+}
+
+/* DISEÑO PARA CELULARES */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .imagenes img {
+        width: 100%;
+        max-width: 350px;
+    }
+}
